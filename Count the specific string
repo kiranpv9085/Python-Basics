@@ -1,0 +1,15 @@
+s = 'azcbobobegghakl'
+count =0
+x=len(s)
+for i in range (len(s)):
+    if s[i]=='b':
+        c=i+1
+        if c!=x:
+            if s[i+1]=='o':
+                a=i+2
+                if a!=x:
+                    if s[i+2]=='b':
+                        count+=1
+                
+        
+print ('Number of times bob occurs is: '+str(count))
